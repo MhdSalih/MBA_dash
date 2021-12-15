@@ -8,6 +8,8 @@ from dash import dash_table as dt
 df=pd.read_excel("MBA_data_1.xlsx")
 app=dash.Dash(__name__)
 server = app.server
+
+
 app.layout = html.Div([
     html.H1(children="Market-basket analysis and prediction",
         style={
